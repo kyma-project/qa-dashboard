@@ -19,8 +19,9 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "test": "react-app-rewired test --passWithNoTests",
+    "eject": "react-scripts eject",
+    "lint-check": "prettier --config ./.prettierrc --check '**/*.{ts,tsx,js,jsx,json,yaml}'"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.8.1",
     "react-app-rewired": "^2.2.1"
   }
 }
